@@ -22,7 +22,7 @@ prerequisites() {
      echo "Hey Uzip already there"
    else
      echo "i am on the way to install uzip"
-     apt-get   install curl
+     sudo apt-get   install curl
   fi
 
 }
@@ -42,7 +42,7 @@ else
 
    echo ""
    echo "Extracting Terraform executable"
-    unzip "$DOWNLOADED_FILE" -d "$INSTALL_DIR"
+   sudo unzip "$DOWNLOADED_FILE" -d "$INSTALL_DIR"
 
   rm "$DOWNLOADED_FILE"
 
