@@ -47,7 +47,7 @@ else
    echo "Extracting Terraform executable"
    unzip terraform_0.12.23_linux_amd64.zip
    mv terraform_0.12.23_linux_amd64.zip terraform
-   mv terraform /usr/local/bin
+   sudo mv terraform /usr/local/bin
 
   rm "$DOWNLOADED_FILE"
 
