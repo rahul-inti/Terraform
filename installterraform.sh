@@ -40,7 +40,7 @@ else
    echo ""
    echo "Downloading Terraform zip'd binary"
     cd /tmp
-    curl -o  "$DOWNLOAD_URL"
+    curl -o  "https://releases.hashicorp.com/terraform/0.12.23/terraform_0.12.23_linux_amd64.zip"
 
    echo ""
    echo "Extracting Terraform executable"
