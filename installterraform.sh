@@ -16,13 +16,13 @@ prerequisites() {
      echo "Hey Curl already there"
    else
      echo "i am on the way to install curl"
-     brew install curl
+    apt-het -y install curl
   fi
    if [ -e "$unzip_cmd" ]; then
      echo "Hey Uzip already there"
    else
      echo "i am on the way to install uzip"
-     sudo apt-get   install curl
+     sudo apt-get   install curl -y
   fi
 
 }
