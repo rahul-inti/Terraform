@@ -39,7 +39,8 @@ else
    echo "Going to install"
    echo ""
    echo "Downloading Terraform zip'd binary"
-    curl -o "$DOWNLOADED_FILE" "$DOWNLOAD_URL"
+    cd /tmp
+    curl -o  "$DOWNLOAD_URL"
 
    echo ""
    echo "Extracting Terraform executable"
