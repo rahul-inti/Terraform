@@ -9,34 +9,33 @@ readonly DOWNLOADED_FILE="$DOWNLOAD_DIR/terraform.zip"
 prerequisites() {
   local curl_cmd=`which curl`
   local unzip_cmd=`which unzip`
-  
+
 #  echo "$curl_cmd"
- 
+
    if [ -e "$curl_cmd" ]; then
      echo "Hey Curl already there"
    else
-     echo "i am on the way to install curl" 
+     echo "i am on the way to install curl"
      brew install curl
-  fi       
-
+  fi
    if [ -e "$unzip_cmd" ]; then
      echo "Hey Uzip already there"
    else
-     echo "i am on the way to install uzip" 
-     brew install curl
+     echo "i am on the way to install uzip"
+    sudo apt-get   install curl
   fi
 
-}  
-prerequisites 
+}
+prerequisites
 
 install_terraform() {
-  
-  if [ -e "$INSTALL_DIR_TERRAFORM" ]; then 
+
+  if [ -e "$INSTALL_DIR_TERRAFORM" ]; then
 
    echo "Terraform already installed +++++"
 
-else 
-   echo "Going to install" 
+else
+   echo "Going to install"
    echo ""
    echo "Downloading Terraform zip'd binary"
     curl -o "$DOWNLOADED_FILE" "$DOWNLOAD_URL"
@@ -44,11 +43,10 @@ else
    echo ""
    echo "Extracting Terraform executable"
     unzip "$DOWNLOADED_FILE" -d "$INSTALL_DIR"
-  
+
   rm "$DOWNLOADED_FILE"
 
   fi
 }
 
 install_terraform
-

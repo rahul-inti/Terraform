@@ -3,6 +3,13 @@ variable "region" {
   default     = "us-east-1"
 }
 
+variable "access" {
+  access_key = "AKIAIXLOG4CCKIJMVC3Q"
+}
+
+variable "secret" {
+  secret_key = "3vBoML9VHasg7nnKTucdALnUVmelJg3KUIyLGsXh"
+}
 variable "cidr_block" {
   description = "This for vpc cide block"
   default     = "10.0.0.0/16"
