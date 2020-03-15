@@ -1,5 +1,5 @@
 #! /bin/bash
-readonly TERRAFORM_VERSION="0.9.6"
+readonly TERRAFORM_VERSION="0.12.23"
 readonly INSTALL_DIR="/usr/local/bin"
 readonly INSTALL_DIR_TERRAFORM="/usr/local/bin/terraform"
 readonly DOWNLOAD_DIR="/tmp"
