@@ -22,7 +22,7 @@ prerequisites() {
      echo "Hey Uzip already there"
    else
      echo "i am on the way to install uzip"
-    sudo apt-get   install curl
+     apt-get   install curl
   fi
 
 }
